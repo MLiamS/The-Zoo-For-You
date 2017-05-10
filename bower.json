@@ -1,0 +1,17 @@
+{
+  "name": "The-Zoo-For-You",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Liam Stabeno <liamstabeno@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MLiamS/The-Zoo-For-You",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

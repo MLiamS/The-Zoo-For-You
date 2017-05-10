@@ -15,3 +15,4 @@ var Animal = (function () {
 var animals = [];
 animals.push(new Animal('Tiger', 'Sam', 7, 'Burgers', 'Mexico', 'Children(unprepared)', 'male', 'Big-Macs', 'Broccoli'));
 console.log(animals);
+//# sourceMappingURL=zoo.js.map
