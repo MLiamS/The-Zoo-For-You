@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
   template: `
   <div class="container">
     <ul *ngFor="let currentAnimal of childAnimalList">
-       <li>Name: {{currentAnimal.name}}</li>
-       <li>Species: {{currentAnimal.species}}</li>
-       <li></li>
-       <li></li>
-       <li></li>
-
+       <li>Name:  {{currentAnimal.name}}</li>
+       <li>Species:  {{currentAnimal.species}}</li>
+       <li>Age:  {{currentAnimal.age}}</li>
+       <li>Diet:  {{currentAnimal.diet}}</li>
+       <li>Location:  {{currentAnimal.location}}</li>
+       <li>Caretakers:  </li>
+       <li>Sex:  </li>
+       <li>Likes:  </li>
+       <li>Dislikes:  </li>
+       <hr>
      </ul>
   </div>
   `
