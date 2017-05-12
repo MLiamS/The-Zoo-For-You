@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
     <h1>The Zoo For You</h1>
-    <h3>{{currentAnimals}}</h3>
+    <creature-detail [childAnimalList]="currentAnimals"></creature-detail>
   </div>
   `
 })
@@ -13,6 +13,6 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
 
-   currentAnimals: Animal[] = [ new Animal('species', 'name', 1 , 'diet', 'location', 'caretakers', 'sex', 'likes', 'dislikes')
+   currentAnimals: Animal[] = [ new Animal('species', 'testname', 1 , 'diet', 'location', 'caretakers', 'sex', 'likes', 'dislikes'; new Animal('species2', 'testname2', 1 , 'diet2', 'location2', 'caretakers2', 'sex2', 'likes2', 'dislikes2')
   ];
 }
