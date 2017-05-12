@@ -1,4 +1,4 @@
-class Animal {
+export class Animal {
 
 constructor(
   public species: string,
@@ -11,7 +11,3 @@ constructor(
   public likes: string,
   public dislikes: string) {}
 }
-
-var animals: Animal[] = [];
-animals.push(new Animal('Tiger', 'Sam', 7, 'Burgers', 'Mexico', 'Children(unprepared)', 'male', 'Big-Macs', 'Broccoli'));
-console.log(animals);
