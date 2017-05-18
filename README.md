@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 In  terminal type:
 * `git clone https://github.com/mliams/electric-conch.git`
-* `cd electric-conch`
+* `cd The-Zoo-For-You`
 * `npm install`
 * `bower install`
 
