@@ -6,25 +6,25 @@ import { Animal } from './animal.model';
   template: `
   <div>
      <label>Species:  </label>
-     <input class="new-animal-input" #newSpecies>
+     <input class="new-animal-input" #newSpecies><br>
      <label>Name:  </label>
-     <input class="new-animal-input" #newName>
+     <input class="new-animal-input" #newName><br>
      <label>Age:  </label>
-     <input class="new-animal-input" #newAge>
+     <input class="new-animal-input" #newAge><br>
      <label>Diet:  </label>
-     <input class="new-animal-input" #newDiet>
+     <input class="new-animal-input" #newDiet><br>
      <label>Location:  </label>
-     <input class="new-animal-input" #newLocation>
+     <input class="new-animal-input" #newLocation><br>
      <label># of Caretakers:  </label>
-     <input class="new-animal-input" #newCaretakers>
+     <input class="new-animal-input" #newCaretakers><br>
      <label>Sex:  </label>
-     <input class="new-animal-input" #newSex>
+     <input class="new-animal-input" #newSex><br>
      <label>Likes:  </label>
-     <input class="new-animal-input" #newLikes>
+     <input class="new-animal-input" #newLikes><br>
      <label>Dislikes:  </label>
      <input class="new-animal-input" #newDislikes>
   </div>
-      <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Log Animal</button>
+      <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add Animal</button>
   `
 })
 

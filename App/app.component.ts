@@ -5,9 +5,18 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
     <h1>The Zoo For You</h1>
-    <animal-list [childAnimalList]="currentAnimals" (clickSender)="editAnimal($event)"></animal-list>
-    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
-    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+    <div class="row">
+      <div class="col-md-6">
+        <animal-list [childAnimalList]="currentAnimals" (clickSender)="editAnimal($event)"></animal-list>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+        </div>
+        <div class="well">
+        <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+        </div>
+      </div>
   </div>
   `
 })
@@ -17,7 +26,7 @@ export class AppComponent {
 
   selectedAnimal = null;
 
-   currentAnimals: Animal[] = [ new Animal('species', 'testname', 1 , 'diet', 'location', 2, 'sex', 'likes', 'dislikes'), new Animal('species2', 'testname2', 1 , 'diet2', 'location2', 2, 'sex2', 'likes2', 'dislikes2'), new Animal('species3', 'testname3', 1 , 'diet3', 'location3', 3, 'sex3', 'likes3', 'dislikes3')
+   currentAnimals: Animal[] = [ new Animal('Frog', 'Sam', 7 , 'Flys', 'The Bog', 2, 'Female', 'Jumping', 'Salt'), new Animal('Dog', 'Rex', 2 , 'Cat-Food', 'by the mailbox', 2, 'Male', 'Mail men', 'Cats'), new Animal('Ladybug', 'Frank', 1 , 'Cheeseburgers', 'Front Yard', 18, 'Male', 'cheddar', 'fly-swatters')
   ];
 
   editAnimal(clickedAnimal) {

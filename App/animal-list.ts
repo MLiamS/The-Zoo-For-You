@@ -11,19 +11,21 @@ import { AppComponent } from './app.component';
         <option value="2minus">Animals under 2 years</option>
       </select>
   <div class="container">
-    <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
-      <li>Name:  {{currentAnimal.name}}</li>
-      <li>Species:  {{currentAnimal.species}}</li>
-      <li>Age:  {{currentAnimal.age}}</li>
-      <li>Diet:  {{currentAnimal.diet}}</li>
-      <li>Location:  {{currentAnimal.location}}</li>
-      <li>Caretakers:  {{currentAnimal.caretakers}}</li>
-      <li>Sex:  {{currentAnimal.sex}}</li>
-      <li>Likes:  {{currentAnimal.likes}}</li>
-      <li>Dislikes:  {{currentAnimal.dislikes}}</li>
-      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
-      <hr>
-     </ul>
+    <div class="well">
+      <ul *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
+        <li>Name:  {{currentAnimal.name}}</li>
+        <li>Species:  {{currentAnimal.species}}</li>
+        <li>Age:  {{currentAnimal.age}}</li>
+        <li>Diet:  {{currentAnimal.diet}}</li>
+        <li>Location:  {{currentAnimal.location}}</li>
+        <li>Caretakers:  {{currentAnimal.caretakers}}</li>
+        <li>Sex:  {{currentAnimal.sex}}</li>
+        <li>Likes:  {{currentAnimal.likes}}</li>
+        <li>Dislikes:  {{currentAnimal.dislikes}}</li>
+        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+        <hr>
+      </ul>
+    </div>
   </div>
   `
 })
@@ -31,6 +33,7 @@ import { AppComponent } from './app.component';
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
+  filterByAge: string = "all";
 
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
