@@ -5,7 +5,8 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <div>
-     <label>Species:  </label>
+  <h3> New Animal </h3>
+  <label>Species:  </label>
      <input class="new-animal-input" #newSpecies><br>
      <label>Name:  </label>
      <input class="new-animal-input" #newName><br>
