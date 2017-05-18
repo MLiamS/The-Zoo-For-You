@@ -2,10 +2,14 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import { AnimalListComponent }  from './animal-list';
+import { EditAnimalComponent } from './edit-animal.component';
+import { FormsModule }  from '@angular/forms';
+
+
 
 @NgModule({
-  imports: [BrowserModule],
-  declarations: [ AppComponent, AnimalListComponent ],
+  imports: [BrowserModule, FormsModule],
+  declarations: [ AppComponent, AnimalListComponent, EditAnimalComponent ],
   bootstrap:    [ AppComponent ]
 })
 
