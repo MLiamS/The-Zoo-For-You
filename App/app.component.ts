@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
     <h1>The Zoo For You</h1>
-    <creature-detail [childAnimalList]="currentAnimals"></creature-detail>
+    <animal-list [childAnimalList]="currentAnimals"></animal-list>
   </div>
   `
 })

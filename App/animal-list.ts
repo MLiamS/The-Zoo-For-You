@@ -3,7 +3,7 @@ import { Animal } from './animal.model';
 import { AppComponent } from './app.component';
 
 @Component({
-  selector: 'creature-detail',
+  selector: 'animal-list',
   template: `
   <div class="container">
     <ul *ngFor="let currentAnimal of childAnimalList">
@@ -12,16 +12,16 @@ import { AppComponent } from './app.component';
        <li>Age:  {{currentAnimal.age}}</li>
        <li>Diet:  {{currentAnimal.diet}}</li>
        <li>Location:  {{currentAnimal.location}}</li>
-       <li>Caretakers:  </li>
-       <li>Sex:  </li>
-       <li>Likes:  </li>
-       <li>Dislikes:  </li>
+       <li>Caretakers:  {{currentAnimal.caretakers}}</li>
+       <li>Sex:  {{currentAnimal.sex}}</li>
+       <li>Likes:  {{currentAnimal.likes}}</li>
+       <li>Dislikes:  {{currentAnimal.dislikes}}</li>
        <hr>
      </ul>
   </div>
   `
 })
 
-export class AnimalDetailsComponent {
+export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
 }
